@@ -17,17 +17,20 @@ PODS:
   - CYLTabBarController (1.6.0)
   - HandyFrame (1.1.1)
   - SDAutoLayout (2.1.4)
+  - ZLSwipeableView (0.0.8)
 
 DEPENDENCIES:
   - AFNetworking
   - CYLTabBarController (~> 1.6.0)
   - HandyFrame
   - SDAutoLayout (~> 2.1.4)
+  - ZLSwipeableView (~> 0.0.8)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   CYLTabBarController: efbdd574772be17f17965acd7ee993f5972ff02f
   HandyFrame: 4e95cc495e84e91f9434fe316f992ba4ee713e3a
   SDAutoLayout: 1b2926b193a63287f473dae426ed07861e21e271
+  ZLSwipeableView: df385760ff4838935cdbcb62878ac5acd7355949
 
 COCOAPODS: 0.39.0
