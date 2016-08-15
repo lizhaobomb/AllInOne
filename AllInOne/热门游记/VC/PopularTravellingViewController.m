@@ -11,9 +11,12 @@
 #import "PopularTravelAPI.h"
 #import "ZLSwipeableView.h"
 #import "CardView.h"
+#import "PopularPlaceReformer.h"
+
 @interface PopularTravellingViewController () <CTAPIManagerCallBackDelegate,CTAPIManagerParamSource,ZLSwipeableViewDelegate,ZLSwipeableViewDataSource>
 @property (nonatomic, strong) PopularTravelAPI *popularTravelAPI;
 @property (nonatomic, strong) ZLSwipeableView *swipeView;
+@property (nonatomic, strong) PopularPlaceReformer *placeReformer;
 @end
 
 @implementation PopularTravellingViewController
@@ -41,7 +44,7 @@
 }
 
 - (void)managerCallAPIDidSuccess:(CTAPIBaseManager *)manager {
-
+   id data = [manager fetchDataWithReformer:self.placeReformer];
 }
 
 #pragma mark - ZLSwipeableViewDelegate
@@ -114,6 +117,13 @@
         _swipeView.dataSource = self;
     }
     return _swipeView;
+}
+
+- (PopularPlaceReformer *)placeReformer {
+    if (!_placeReformer) {
+        _placeReformer = [[PopularPlaceReformer alloc] init];
+    }
+    return _placeReformer;
 }
 
 @end

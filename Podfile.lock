@@ -14,6 +14,11 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - AVOSCloud (3.3.5)
+  - AVOSCloudCrashReporting (3.3.5):
+    - AVOSCloud
+  - AVOSCloudIM (3.3.5):
+    - AVOSCloud
   - CYLTabBarController (1.6.0)
   - HandyFrame (1.1.1)
   - SDAutoLayout (2.1.4)
@@ -21,6 +26,9 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - AVOSCloud
+  - AVOSCloudCrashReporting
+  - AVOSCloudIM
   - CYLTabBarController (~> 1.6.0)
   - HandyFrame
   - SDAutoLayout (~> 2.1.4)
@@ -28,6 +36,9 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  AVOSCloud: 1fe170768bee7e05bc3ea86e38d5bddb105cb957
+  AVOSCloudCrashReporting: 7ad087db785a25d6ef03cb54c2c0b460eb32dabb
+  AVOSCloudIM: dc307c48e951fcd861f4ae6db6d807e7b40639c8
   CYLTabBarController: efbdd574772be17f17965acd7ee993f5972ff02f
   HandyFrame: 4e95cc495e84e91f9434fe316f992ba4ee713e3a
   SDAutoLayout: 1b2926b193a63287f473dae426ed07861e21e271

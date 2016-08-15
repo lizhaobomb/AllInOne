@@ -49,4 +49,8 @@
     }
 }
 
+- (void)configWithData:(id)data {
+
+}
+
 @end

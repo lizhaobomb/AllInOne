@@ -12,4 +12,6 @@
 
 @property (nonatomic,strong) UIColor *cardColor;
 
+- (void)configWithData:(id)data;
+
 @end
