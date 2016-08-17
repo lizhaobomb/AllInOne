@@ -22,7 +22,7 @@
 }
 
 - (NSString *)methodName {
-    return @"/txapi/weixin/wxhot";
+    return @"weixin/query";
 }
 
 - (NSString *)serviceType {
@@ -38,7 +38,7 @@
 }
 
 - (NSDictionary *)reformParams:(NSDictionary *)params {
-    return @{};
+    return @{@"pno":@"1",@"ps":@"50",@"key":@"c43f5b0c6ed0a569dd35f9d3211a2037"};;
 }
 
 - (BOOL)manager:(CTAPIBaseManager *)manager isCorrectWithParamsData:(NSDictionary *)data {

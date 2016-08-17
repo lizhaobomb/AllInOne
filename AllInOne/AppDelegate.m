@@ -25,12 +25,12 @@
     [AVAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-//    CYLTabBarControllerConfig *tabbarControllerConfig = [[CYLTabBarControllerConfig alloc] init];
-//    self.window.rootViewController = tabbarControllerConfig.tabBarController;
-    LZLoginViewController *loginVC = [[LZLoginViewController alloc] init];
-
-    UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:loginVC];
-    self.window.rootViewController = navi;
+    CYLTabBarControllerConfig *tabbarControllerConfig = [[CYLTabBarControllerConfig alloc] init];
+    self.window.rootViewController = tabbarControllerConfig.tabBarController;
+//    LZLoginViewController *loginVC = [[LZLoginViewController alloc] init];
+//
+//    UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:loginVC];
+//    self.window.rootViewController = navi;
     [self.window makeKeyAndVisible];
     [self customizeInterface];
     return YES;

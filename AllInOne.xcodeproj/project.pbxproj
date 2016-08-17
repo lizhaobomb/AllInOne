@@ -10,10 +10,11 @@
 		9881AF51717DAAD4266B34BB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B550C2575AA5E9B5521ABD /* libPods.a */; };
 		F11BBBAA1D5485C200985C16 /* CardView.m in Sources */ = {isa = PBXBuildFile; fileRef = F11BBBA91D5485C200985C16 /* CardView.m */; };
 		F13DEDC61D61BDB400DC6DA4 /* LZLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F13DEDC51D61BDB400DC6DA4 /* LZLoginViewController.m */; };
+		F1AE859C1D64617800BA2FF1 /* WeChatSelectionDataReformer.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AE859B1D64617800BA2FF1 /* WeChatSelectionDataReformer.m */; };
+		F1AE85A01D646A3F00BA2FF1 /* WeChatSelectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AE859F1D646A3F00BA2FF1 /* WeChatSelectionManager.m */; };
 		F1BC3E931D531D29001AE008 /* WeChatSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BC3E921D531D29001AE008 /* WeChatSelectionViewController.m */; };
 		F1BC3E981D531EF0001AE008 /* PopularTravellingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BC3E971D531EF0001AE008 /* PopularTravellingViewController.m */; };
 		F1BC3E9E1D532093001AE008 /* CYLTabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BC3E9D1D532093001AE008 /* CYLTabBarControllerConfig.m */; };
-		F1BC3EA21D533421001AE008 /* WeChatSelectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BC3EA11D533421001AE008 /* WeChatSelectionManager.m */; };
 		F1BC3EA51D533798001AE008 /* WeChatSelectionService.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BC3EA41D533798001AE008 /* WeChatSelectionService.m */; };
 		F1BC3EA91D533D85001AE008 /* PopularTravelAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BC3EA81D533D85001AE008 /* PopularTravelAPI.m */; };
 		F1BC3EAC1D53418E001AE008 /* PopularTravelService.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BC3EAB1D53418E001AE008 /* PopularTravelService.m */; };
@@ -58,14 +59,16 @@
 		F11BBBA91D5485C200985C16 /* CardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardView.m; sourceTree = "<group>"; };
 		F13DEDC41D61BDB400DC6DA4 /* LZLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZLoginViewController.h; sourceTree = "<group>"; };
 		F13DEDC51D61BDB400DC6DA4 /* LZLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZLoginViewController.m; sourceTree = "<group>"; };
+		F1AE859A1D64617800BA2FF1 /* WeChatSelectionDataReformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeChatSelectionDataReformer.h; sourceTree = "<group>"; };
+		F1AE859B1D64617800BA2FF1 /* WeChatSelectionDataReformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeChatSelectionDataReformer.m; sourceTree = "<group>"; };
+		F1AE859E1D646A3F00BA2FF1 /* WeChatSelectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeChatSelectionManager.h; sourceTree = "<group>"; };
+		F1AE859F1D646A3F00BA2FF1 /* WeChatSelectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeChatSelectionManager.m; sourceTree = "<group>"; };
 		F1BC3E911D531D29001AE008 /* WeChatSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeChatSelectionViewController.h; sourceTree = "<group>"; };
 		F1BC3E921D531D29001AE008 /* WeChatSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeChatSelectionViewController.m; sourceTree = "<group>"; };
 		F1BC3E961D531EF0001AE008 /* PopularTravellingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopularTravellingViewController.h; sourceTree = "<group>"; };
 		F1BC3E971D531EF0001AE008 /* PopularTravellingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopularTravellingViewController.m; sourceTree = "<group>"; };
 		F1BC3E9C1D532093001AE008 /* CYLTabBarControllerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTabBarControllerConfig.h; sourceTree = "<group>"; };
 		F1BC3E9D1D532093001AE008 /* CYLTabBarControllerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLTabBarControllerConfig.m; sourceTree = "<group>"; };
-		F1BC3EA01D533421001AE008 /* WeChatSelectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeChatSelectionManager.h; sourceTree = "<group>"; };
-		F1BC3EA11D533421001AE008 /* WeChatSelectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeChatSelectionManager.m; sourceTree = "<group>"; };
 		F1BC3EA31D533798001AE008 /* WeChatSelectionService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeChatSelectionService.h; sourceTree = "<group>"; };
 		F1BC3EA41D533798001AE008 /* WeChatSelectionService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeChatSelectionService.m; sourceTree = "<group>"; };
 		F1BC3EA71D533D85001AE008 /* PopularTravelAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopularTravelAPI.h; sourceTree = "<group>"; };
@@ -174,6 +177,15 @@
 			path = "登录";
 			sourceTree = "<group>";
 		};
+		F1AE859D1D646A2E00BA2FF1 /* WeChatSelectionApi */ = {
+			isa = PBXGroup;
+			children = (
+				F1AE859E1D646A3F00BA2FF1 /* WeChatSelectionManager.h */,
+				F1AE859F1D646A3F00BA2FF1 /* WeChatSelectionManager.m */,
+			);
+			path = WeChatSelectionApi;
+			sourceTree = "<group>";
+		};
 		F1BC3E8F1D531B1E001AE008 /* 微信精选 */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,9 +224,8 @@
 		F1BC3E9F1D533259001AE008 /* APIManager */ = {
 			isa = PBXGroup;
 			children = (
+				F1AE859D1D646A2E00BA2FF1 /* WeChatSelectionApi */,
 				F1BC3EA61D533D64001AE008 /* PopularTravelAPI */,
-				F1BC3EA01D533421001AE008 /* WeChatSelectionManager.h */,
-				F1BC3EA11D533421001AE008 /* WeChatSelectionManager.m */,
 			);
 			path = APIManager;
 			sourceTree = "<group>";
@@ -496,6 +507,8 @@
 				F1F78D1E1D5C82EE004E6215 /* PopularPlaceReformer.h */,
 				F1F78D1F1D5C82EE004E6215 /* PopularPlaceReformer.m */,
 				F1F78D211D5C85D1004E6215 /* PlaceReformKeys.h */,
+				F1AE859A1D64617800BA2FF1 /* WeChatSelectionDataReformer.h */,
+				F1AE859B1D64617800BA2FF1 /* WeChatSelectionDataReformer.m */,
 			);
 			path = Reformer;
 			sourceTree = "<group>";
@@ -631,13 +644,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1AE85A01D646A3F00BA2FF1 /* WeChatSelectionManager.m in Sources */,
 				F1EC49E01D51C3E000358D27 /* CTLoggerConfiguration.m in Sources */,
 				F1EC49D61D51C3E000358D27 /* CTLocationManager.m in Sources */,
 				F1EC49DB1D51C3E000358D27 /* CTSignatureGenerator.m in Sources */,
 				F1EC49DA1D51C3E000358D27 /* CTRequestGenerator.m in Sources */,
 				F1EC49CD1D51C3E000358D27 /* NSObject+AXNetworkingMethods.m in Sources */,
 				F1EC49CE1D51C3E000358D27 /* NSString+AXNetworkingMethods.m in Sources */,
-				F1BC3EA21D533421001AE008 /* WeChatSelectionManager.m in Sources */,
 				F1EC49CA1D51C3E000358D27 /* NSArray+AXNetworkingMethods.m in Sources */,
 				F1BC3E9E1D532093001AE008 /* CYLTabBarControllerConfig.m in Sources */,
 				F1BC3E931D531D29001AE008 /* WeChatSelectionViewController.m in Sources */,
@@ -652,6 +665,7 @@
 				F1EC49CC1D51C3E000358D27 /* NSMutableString+AXNetworkingMethods.m in Sources */,
 				F1EC49D11D51C3E000358D27 /* CTApiProxy.m in Sources */,
 				F1EC49D91D51C3E000358D27 /* CTCommonParamsGenerator.m in Sources */,
+				F1AE859C1D64617800BA2FF1 /* WeChatSelectionDataReformer.m in Sources */,
 				F1EC49DE1D51C3E000358D27 /* CTServiceFactory.m in Sources */,
 				F1BC3EA51D533798001AE008 /* WeChatSelectionService.m in Sources */,
 				F1EC49DC1D51C3E000358D27 /* CTUDIDGenerator.m in Sources */,

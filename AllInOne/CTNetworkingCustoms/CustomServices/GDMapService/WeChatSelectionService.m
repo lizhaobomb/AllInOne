@@ -19,12 +19,12 @@
 
 - (NSString *)offlineApiBaseUrl
 {
-    return @"http://apis.baidu.com";
+    return @"http://v.juhe.cn";
 }
 
 - (NSString *)onlineApiBaseUrl
 {
-    return @"http://apis.baidu.com";
+    return @"http://v.juhe.cn";
 }
 
 - (NSString *)offlineApiVersion

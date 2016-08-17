@@ -14,3 +14,12 @@ extern NSString* const kStartTime;
 extern NSString* const kRouteDays;
 extern NSString* const kBookImgNum;
 extern NSString* const kBookText;
+
+
+//微信精选
+extern NSString *const kFirstImg;
+extern NSString *const kId;
+extern NSString *const kSource;
+extern NSString *const kWeTitle;
+extern NSString *const kUrl;
+extern NSString *const kMark;
