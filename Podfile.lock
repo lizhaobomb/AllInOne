@@ -22,6 +22,13 @@ PODS:
   - CYLTabBarController (1.6.0)
   - HandyFrame (1.1.1)
   - SDAutoLayout (2.1.4)
+  - YYCache (1.0.3)
+  - YYImage (1.0.3):
+    - YYImage/Core (= 1.0.3)
+  - YYImage/Core (1.0.3)
+  - YYWebImage (1.0.4):
+    - YYCache
+    - YYImage
   - ZLSwipeableView (0.0.8)
 
 DEPENDENCIES:
@@ -32,6 +39,7 @@ DEPENDENCIES:
   - CYLTabBarController (~> 1.6.0)
   - HandyFrame
   - SDAutoLayout (~> 2.1.4)
+  - YYWebImage (~> 1.0.4)
   - ZLSwipeableView (~> 0.0.8)
 
 SPEC CHECKSUMS:
@@ -42,6 +50,9 @@ SPEC CHECKSUMS:
   CYLTabBarController: efbdd574772be17f17965acd7ee993f5972ff02f
   HandyFrame: 4e95cc495e84e91f9434fe316f992ba4ee713e3a
   SDAutoLayout: 1b2926b193a63287f473dae426ed07861e21e271
+  YYCache: 282f35b5b0990833d0b7a06d864a87141a021da2
+  YYImage: 362f44ffba1fc498f2152060f3bb54ed84600981
+  YYWebImage: 0431ed108e104527669b86f75efd58958425cca2
   ZLSwipeableView: df385760ff4838935cdbcb62878ac5acd7355949
 
 COCOAPODS: 0.39.0
