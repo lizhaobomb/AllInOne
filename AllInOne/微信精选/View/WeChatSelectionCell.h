@@ -10,4 +10,6 @@
 
 @interface WeChatSelectionCell : UITableViewCell
 
+@property (nonatomic, strong) NSDictionary *cellData;
+
 @end

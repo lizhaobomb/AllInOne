@@ -10,13 +10,15 @@
 #import "SDAutoLayout.h"
 #import "WeChatSelectionManager.h"
 #import "WeChatSelectionDataReformer.h"
+#import "WeChatSelectionCell.h"
+#import "WeChatSelectionDetailViewController.h"
 
 @interface WeChatSelectionViewController ()<UITableViewDelegate, UITableViewDataSource, CTAPIManagerCallBackDelegate>
 
 @property (nonatomic, strong) UITableView *wechatSelectionTable;
 @property (nonatomic, strong) WeChatSelectionManager *apiManager;
 @property (nonatomic, strong) WeChatSelectionDataReformer *dataReformer;
-
+@property (nonatomic, strong) NSArray *dataSource;
 @end
 
 @implementation WeChatSelectionViewController
@@ -40,13 +42,24 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 20;
+    return self.dataSource.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-    cell.textLabel.text = [NSString stringWithFormat:@"%zd行",indexPath.row];
+    WeChatSelectionCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    cell.cellData = self.dataSource[indexPath.row];
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 120;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSDictionary *data = self.dataSource[indexPath.row];
+    WeChatSelectionDetailViewController *detailVC = [[WeChatSelectionDetailViewController alloc] init];
+    detailVC.url = data[kUrl];
+    [self.navigationController pushViewController:detailVC animated:YES];
 }
 
 //#pragma mark - CTAPIManagerParamSource
@@ -57,6 +70,8 @@
 #pragma mark - CTAPIManagerCallBackDelegate
 - (void)managerCallAPIDidSuccess:(CTAPIBaseManager *)manager {
     NSArray* data = [manager fetchDataWithReformer:self.dataReformer];
+    self.dataSource = data;
+    [self.wechatSelectionTable reloadData];
 }
 
 - (void)managerCallAPIDidFailed:(CTAPIBaseManager *)manager {
@@ -86,7 +101,7 @@
         _wechatSelectionTable = [UITableView new];
         _wechatSelectionTable.delegate = self;
         _wechatSelectionTable.dataSource = self;
-        [_wechatSelectionTable registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
+        [_wechatSelectionTable registerClass:[WeChatSelectionCell class] forCellReuseIdentifier:@"Cell"];
     }
     return _wechatSelectionTable;
 }

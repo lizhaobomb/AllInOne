@@ -21,6 +21,11 @@ PODS:
     - AVOSCloud
   - CYLTabBarController (1.6.0)
   - HandyFrame (1.1.1)
+  - NJKWebViewProgress (0.2.3):
+    - NJKWebViewProgress/Core (= 0.2.3)
+    - NJKWebViewProgress/ProgressView (= 0.2.3)
+  - NJKWebViewProgress/Core (0.2.3)
+  - NJKWebViewProgress/ProgressView (0.2.3)
   - SDAutoLayout (2.1.4)
   - YYCache (1.0.3)
   - YYImage (1.0.3):
@@ -38,6 +43,7 @@ DEPENDENCIES:
   - AVOSCloudIM
   - CYLTabBarController (~> 1.6.0)
   - HandyFrame
+  - NJKWebViewProgress (~> 0.2.3)
   - SDAutoLayout (~> 2.1.4)
   - YYWebImage (~> 1.0.4)
   - ZLSwipeableView (~> 0.0.8)
@@ -49,6 +55,7 @@ SPEC CHECKSUMS:
   AVOSCloudIM: dc307c48e951fcd861f4ae6db6d807e7b40639c8
   CYLTabBarController: efbdd574772be17f17965acd7ee993f5972ff02f
   HandyFrame: 4e95cc495e84e91f9434fe316f992ba4ee713e3a
+  NJKWebViewProgress: f481fd424cb5ecc27eacae11b5397db92fba9a4d
   SDAutoLayout: 1b2926b193a63287f473dae426ed07861e21e271
   YYCache: 282f35b5b0990833d0b7a06d864a87141a021da2
   YYImage: 362f44ffba1fc498f2152060f3bb54ed84600981

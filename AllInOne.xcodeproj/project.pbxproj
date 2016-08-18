@@ -13,6 +13,7 @@
 		F1AE859C1D64617800BA2FF1 /* WeChatSelectionDataReformer.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AE859B1D64617800BA2FF1 /* WeChatSelectionDataReformer.m */; };
 		F1AE85A01D646A3F00BA2FF1 /* WeChatSelectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AE859F1D646A3F00BA2FF1 /* WeChatSelectionManager.m */; };
 		F1AE85A41D646F0F00BA2FF1 /* WeChatSelectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AE85A31D646F0F00BA2FF1 /* WeChatSelectionCell.m */; };
+		F1AE85A71D65B22800BA2FF1 /* WeChatSelectionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AE85A61D65B22800BA2FF1 /* WeChatSelectionDetailViewController.m */; };
 		F1BC3E931D531D29001AE008 /* WeChatSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BC3E921D531D29001AE008 /* WeChatSelectionViewController.m */; };
 		F1BC3E981D531EF0001AE008 /* PopularTravellingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BC3E971D531EF0001AE008 /* PopularTravellingViewController.m */; };
 		F1BC3E9E1D532093001AE008 /* CYLTabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BC3E9D1D532093001AE008 /* CYLTabBarControllerConfig.m */; };
@@ -66,6 +67,8 @@
 		F1AE859F1D646A3F00BA2FF1 /* WeChatSelectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeChatSelectionManager.m; sourceTree = "<group>"; };
 		F1AE85A21D646F0F00BA2FF1 /* WeChatSelectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeChatSelectionCell.h; sourceTree = "<group>"; };
 		F1AE85A31D646F0F00BA2FF1 /* WeChatSelectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeChatSelectionCell.m; sourceTree = "<group>"; };
+		F1AE85A51D65B22800BA2FF1 /* WeChatSelectionDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeChatSelectionDetailViewController.h; sourceTree = "<group>"; };
+		F1AE85A61D65B22800BA2FF1 /* WeChatSelectionDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeChatSelectionDetailViewController.m; sourceTree = "<group>"; };
 		F1BC3E911D531D29001AE008 /* WeChatSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeChatSelectionViewController.h; sourceTree = "<group>"; };
 		F1BC3E921D531D29001AE008 /* WeChatSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeChatSelectionViewController.m; sourceTree = "<group>"; };
 		F1BC3E961D531EF0001AE008 /* PopularTravellingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopularTravellingViewController.h; sourceTree = "<group>"; };
@@ -212,6 +215,8 @@
 			children = (
 				F1BC3E911D531D29001AE008 /* WeChatSelectionViewController.h */,
 				F1BC3E921D531D29001AE008 /* WeChatSelectionViewController.m */,
+				F1AE85A51D65B22800BA2FF1 /* WeChatSelectionDetailViewController.h */,
+				F1AE85A61D65B22800BA2FF1 /* WeChatSelectionDetailViewController.m */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -677,6 +682,7 @@
 				F1EC49751D5186CC00358D27 /* ViewController.m in Sources */,
 				F1EC49721D5186CC00358D27 /* AppDelegate.m in Sources */,
 				F1EC49CC1D51C3E000358D27 /* NSMutableString+AXNetworkingMethods.m in Sources */,
+				F1AE85A71D65B22800BA2FF1 /* WeChatSelectionDetailViewController.m in Sources */,
 				F1EC49D11D51C3E000358D27 /* CTApiProxy.m in Sources */,
 				F1EC49D91D51C3E000358D27 /* CTCommonParamsGenerator.m in Sources */,
 				F1AE859C1D64617800BA2FF1 /* WeChatSelectionDataReformer.m in Sources */,
