@@ -68,7 +68,6 @@
     if (!_titleLabel) {
         _titleLabel = [[UILabel alloc] init];
         _titleLabel.font = [UIFont systemFontOfSize:16];
-        _titleLabel.backgroundColor = [UIColor greenColor];
     }
     return _titleLabel;
 }
@@ -76,7 +75,6 @@
 - (UIImageView *)mainPic {
     if (!_mainPic) {
         _mainPic = [[UIImageView alloc] init];
-        _mainPic.backgroundColor = [UIColor redColor];
     }
     return _mainPic;
 }

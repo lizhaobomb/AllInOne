@@ -12,6 +12,7 @@
 #import "WeChatSelectionDataReformer.h"
 #import "WeChatSelectionCell.h"
 #import "WeChatSelectionDetailViewController.h"
+#import "MJRefresh.h"
 
 @interface WeChatSelectionViewController ()<UITableViewDelegate, UITableViewDataSource, CTAPIManagerCallBackDelegate>
 
@@ -26,14 +27,33 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"微信精选";
-    [self.view addSubview:self.wechatSelectionTable];
-    self.wechatSelectionTable.sd_layout.spaceToSuperView(UIEdgeInsetsMake(0, 0, 0, 0));
+    [self loadSubViews];
+    [self setupConstraints];
+    [self setupRefreshHeaderAndFooter];
     [self.apiManager loadData];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)loadSubViews {
+    [self.view addSubview:self.wechatSelectionTable];
+}
+
+- (void)setupRefreshHeaderAndFooter {
+    self.wechatSelectionTable.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        
+    }];
+    
+    self.wechatSelectionTable.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
+        
+    }];
+}
+
+- (void)setupConstraints {
+    self.wechatSelectionTable.sd_layout.spaceToSuperView(UIEdgeInsetsMake(0, 0, 0, 0));
 }
 
 #pragma mark - UITableViewDelegate 
@@ -52,7 +72,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 120;
+    return 130;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

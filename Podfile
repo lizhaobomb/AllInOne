@@ -8,3 +8,4 @@ pod 'AVOSCloudIM'             # 实时通信模块
 pod 'AVOSCloudCrashReporting' # 错误报告模块
 pod 'YYWebImage', '~> 1.0.4'
 pod 'NJKWebViewProgress', '~> 0.2.3'
+pod 'MJRefresh', '~> 3.1.12' 
