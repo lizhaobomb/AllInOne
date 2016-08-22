@@ -9,7 +9,8 @@
 #import "WeChatSelectionManager.h"
 
 @interface WeChatSelectionManager() <CTAPIManagerValidator>
-
+@property (nonatomic, assign) NSInteger pageNum;
+@property (nonatomic, assign) NSInteger pageSize;
 @end
 
 @implementation WeChatSelectionManager
@@ -17,6 +18,8 @@
 - (instancetype)init {
     if (self = [super init]) {
         self.validator = self;
+        self.pageNum = 1;
+        self.pageSize = 20;
     }
     return self;
 }
@@ -37,8 +40,22 @@
     return YES;
 }
 
+- (BOOL)isFirstPage {
+    return self.pageNum == 1;
+}
+
+- (void)loadNextPage {
+    self.pageNum ++;
+    [self loadData];
+}
+
+- (void)loadFirstPage {
+    self.pageNum = 1;
+    [self loadData];
+}
+
 - (NSDictionary *)reformParams:(NSDictionary *)params {
-    return @{@"pno":@"1",@"ps":@"50",@"key":@"c43f5b0c6ed0a569dd35f9d3211a2037"};;
+    return @{@"pno":@(self.pageNum),@"ps":@(self.pageSize),@"key":@"c43f5b0c6ed0a569dd35f9d3211a2037"};;
 }
 
 - (BOOL)manager:(CTAPIBaseManager *)manager isCorrectWithParamsData:(NSDictionary *)data {

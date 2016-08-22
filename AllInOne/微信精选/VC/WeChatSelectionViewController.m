@@ -30,7 +30,7 @@
     [self loadSubViews];
     [self setupConstraints];
     [self setupRefreshHeaderAndFooter];
-    [self.apiManager loadData];
+    [self.apiManager loadFirstPage];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -44,16 +44,21 @@
 
 - (void)setupRefreshHeaderAndFooter {
     self.wechatSelectionTable.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
-        
+        [self.apiManager loadFirstPage];
     }];
     
     self.wechatSelectionTable.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
-        
+        [self.apiManager loadNextPage];
     }];
 }
 
 - (void)setupConstraints {
     self.wechatSelectionTable.sd_layout.spaceToSuperView(UIEdgeInsetsMake(0, 0, 0, 0));
+}
+
+- (void)endFreshing {
+    [self.wechatSelectionTable.mj_header endRefreshing];
+    [self.wechatSelectionTable.mj_footer endRefreshing];
 }
 
 #pragma mark - UITableViewDelegate 
@@ -89,13 +94,14 @@
 
 #pragma mark - CTAPIManagerCallBackDelegate
 - (void)managerCallAPIDidSuccess:(CTAPIBaseManager *)manager {
+    [self endFreshing];
     NSArray* data = [manager fetchDataWithReformer:self.dataReformer];
     self.dataSource = data;
     [self.wechatSelectionTable reloadData];
 }
 
 - (void)managerCallAPIDidFailed:(CTAPIBaseManager *)manager {
-
+    [self endFreshing];
 }
 
 #pragma mark - getters

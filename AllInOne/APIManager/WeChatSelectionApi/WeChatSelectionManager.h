@@ -10,4 +10,8 @@
 
 @interface WeChatSelectionManager : CTAPIBaseManager <CTAPIManager>
 
+- (void)loadNextPage;
+- (void)loadFirstPage;
+- (BOOL)isFirstPage;
+
 @end
